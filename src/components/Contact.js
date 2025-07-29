@@ -25,7 +25,7 @@ const Contact = () => {
   className="max-w-xl mx-auto bg-base-100 p-8 rounded-2xl shadow-md text-base-content"
 >
   <input type="hidden" name="_captcha" value="false" />
-  <input type="hidden" name="_next" value="https://yourdomain.com/" />
+  <input type="hidden" name="_next" value="https://zain455377.github.io/Portfolio/" />
   <div className="mb-4">
     <input
       type="text"
