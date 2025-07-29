@@ -40,7 +40,7 @@ const SocialLinks = () => {
       {/* Social Icons */}
       <div className="flex justify-center gap-6 mb-6">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/zain455377"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-pink-600 transition text-2xl"
@@ -48,7 +48,7 @@ const SocialLinks = () => {
           <FaGithub />
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://linkedin.com/in/zain-ul-abedin-khan-6773b4247"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-pink-600 transition text-2xl"
