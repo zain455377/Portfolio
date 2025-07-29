@@ -21,7 +21,7 @@ const Contact = () => {
 <form
   action="https://formsubmit.co/zainjamil455@gmail.com"
   method="POST"
-  onSubmit={handleSubmit}
+  
   className="max-w-xl mx-auto bg-base-100 p-8 rounded-2xl shadow-md text-base-content"
 >
   <input type="hidden" name="_captcha" value="false" />
