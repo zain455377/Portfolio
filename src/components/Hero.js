@@ -39,7 +39,7 @@ function Hero() {
           {/* Social Icons */}
           <div className="flex gap-6 mt-6 justify-center md:justify-start">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/zain455377"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-pink-500 text-2xl transition"
@@ -47,7 +47,7 @@ function Hero() {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/zain-ul-abedin-khan-6773b4247"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-pink-500 text-2xl transition"
