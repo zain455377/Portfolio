@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FiMenu, FiX } from 'react-icons/fi';
 
 const links = [
   { name: 'Home', href: '#hero' },
@@ -11,12 +12,15 @@ const links = [
 ];
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 w-full bg-[#1e293b] dark:bg-gray-800 text-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <h1 className="text-2xl font-bold text-pink-500">Portfolio</h1>
 
-        <nav>
+        {/* Desktop Links */}
+        <nav className="hidden md:block">
           <ul className="flex space-x-6">
             {links.map(link => (
               <li key={link.name}>
@@ -30,7 +34,33 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
+
+        {/* Mobile Menu Toggle */}
+        <div className="md:hidden">
+          <button onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Dropdown Menu */}
+      {menuOpen && (
+        <nav className="md:hidden bg-[#1e293b] px-4 pb-4">
+          <ul className="flex flex-col space-y-4">
+            {links.map(link => (
+              <li key={link.name}>
+                <a
+                  href={link.href}
+                  className="block text-base font-medium hover:text-pink-500 transition-colors duration-300"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };
