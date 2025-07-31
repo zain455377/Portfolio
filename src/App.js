@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-    <div className="scroll-smooth">
+    <div className="scroll-smooth relative">
       <Navbar/>
       <ThemeToggle />
       <Hero />

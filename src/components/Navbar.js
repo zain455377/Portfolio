@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <nav className="md:hidden bg-[#1e293b] px-4 pb-4">
+        <nav className="md:hidden absolute top-16 left-0 w-full bg-[#1e293b] px-4 pb-4 z-50 shadow-lg">
           <ul className="flex flex-col space-y-4">
             {links.map(link => (
               <li key={link.name}>
