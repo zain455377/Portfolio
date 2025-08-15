@@ -3,23 +3,12 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
-    title: 'Portfolio Website',
-    description: 'A responsive and modern portfolio to showcase my work.',
+    title: 'Server Monitoring Dashboard',
+    description: 'A comprehensive web-based dashboard built with React.js (frontend), Node.js + Express.js (backend), and MySQL (database).The application provides an interactive interface to manage server data, view user lists, and monitor server activity in real-time.',
     liveLink: 'https://yourportfolio.com',
-    githubLink: 'https://github.com/yourusername/portfolio',
+    githubLink: 'https://github.com/zain455377/Server-Monitoring',
   },
-  {
-    title: 'Task Manager App',
-    description: 'A MERN stack app to manage tasks with JWT authentication.',
-    liveLink: 'https://yourtaskapp.com',
-    githubLink: 'https://github.com/yourusername/task-manager',
-  },
-  {
-    title: 'Weather Dashboard',
-    description: 'Fetches real-time weather using OpenWeatherMap API.',
-    liveLink: 'https://yourweatherapp.com',
-    githubLink: 'https://github.com/yourusername/weather-app',
-  },
+  
   // Add more as needed
 ];
 
